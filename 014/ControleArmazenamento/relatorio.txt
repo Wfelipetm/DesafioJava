@@ -1,0 +1,6 @@
+ACME Inc.    Uso do espaço em disco pelos usuários
+----------------------------------------------------
+Nr.  Usuário        Espaço utilizado     % do uso
+
+Espaco total ocupado: 0,00 MB
+Espaco médio ocupado: NaN MB
