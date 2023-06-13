@@ -84,15 +84,18 @@ public class Controle {
 }
 
     public static void main(String[] args) {
-        preencheInformacoesUsuarios();
-        String relatorio = criaRelatorio();
-
-        String nomeArquivo;
-        try (Scanner scanner = new Scanner(System.in)) {
-            System.out.print("Digite o nome do arquivo para salvar o relatório: ");
-            nomeArquivo = scanner.nextLine();
-        }
-
+    preencheInformacoesUsuarios();
+    String relatorio = criaRelatorio();
+    
+    System.out.println(relatorio); // Exibir relatório no terminal
+    
+    String nomeArquivo;
+    try (Scanner scanner = new Scanner(System.in)) {
+        System.out.print("Digite o nome do arquivo para salvar o relatório: ");
+        nomeArquivo = scanner.nextLine();
+    }
+    
         escreveTextoNoArquivo(relatorio, nomeArquivo);
     }
+
 }
